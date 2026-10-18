@@ -1,0 +1,26 @@
+# SummonForge - config interna (el contenido se crea por GUI con /inv)
+modules:
+  model: true
+  ability: true
+  summon: true
+  boss: true
+  item: true
+
+damage-numbers: true
+
+pvp:
+  summons-damage-players: false
+
+limits:
+  max-projectiles: 80
+  max-bosses: 20
+
+summon:
+  revive-cooldown-seconds: 30
+  max-equipped: 3
+
+boss:
+  announce-spawn: true
+
+drops:
+  protect-seconds: 30
