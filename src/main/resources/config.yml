@@ -1,0 +1,53 @@
+# SummonForge - config interna (el contenido se crea por GUI con /inv)
+modules:
+  model: true
+  ability: true
+  summon: true
+  boss: true
+  item: true
+
+damage-numbers: true
+
+pvp:
+  summons-damage-players: false
+
+limits:
+  max-projectiles: 80
+  max-bosses: 20
+  max-squad-members: 12
+
+summon:
+  revive-cooldown-seconds: 30
+  max-equipped: 3
+  mana-base: 100
+  mana-per-level: 10
+  mana-regen: 3
+  perfect-seconds: 30
+  rune-slots: 3
+
+boss:
+  announce-spawn: true
+
+drops:
+  protect-seconds: 30
+
+# Evento global: cada N minutos aparece uno de estos bosses cerca de un jugador al azar
+events:
+  enabled: false
+  interval-minutes: 60
+  min-players: 1
+  bosses: []
+
+# Modelos (BetterModel)
+model:
+  # Reproduce la animación "hurt" al recibir daño. Apagado por defecto: si tu modelo desaparece al pegarle, déjalo apagado.
+  hurt-animation: false
+
+# Dificultad global de bosses: FACIL, NORMAL, DIFICIL, HARDCORE
+difficulty: NORMAL
+
+# Nombres de las etapas de despertar (objetos de tipo Despertar)
+awakening-stages:
+  - "Despertar I"
+  - "Despertar II"
+  - "Despertar III"
